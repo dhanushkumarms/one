@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/my.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">     
+        <title>Kaarchive</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/k.png" alt="" class="header__img">
+                <a href="#" class="header__logo">My Documents</a>
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">KAARrchive</span>
+                    </a>
+                    <a class="emailname">
+                        <p>dhanushkumar@gmail.com</p>
+                    </a>
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-dashboard' ></i>
+                                <span class="nav__name">Dashboard</span>
+                            </a>
+                        <a href="javascript:void(0)" class="nav__link active" onclick="window.location.href='my.html'">
+                            <i class='bx bx-copy-alt'></i>
+                            <span class="nav__name">My Documents</span>
+                        </a>
+
+                            <a href="#" class="nav__link">
+                                 <i class='bx bx-message-rounded' ></i>
+                                <span class="nav__name">Kaar AI</span>
+                            </a>
+                            <a href="#" class="nav__link ">
+                                <i class='bx bx-upload' ></i>
+                                <span class="nav__name">Upload</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                               <i class='bx bx-help-circle' ></i>
+                                <span class="nav__name">Help & FAQ</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-cog'></i>
+                                <span class="nav__name">Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out'></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>My Documents</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Documents...">
+                <img src="assets\img\search.png" alt="">
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Document's Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Subject <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Size <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Actions </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <img src="assets\img\docx.png" alt="">Report.docx</td>
+                        <td>Internet of Things</td>
+                        <td> 17 Dec, 2024 </td>
+                        <td> <strong>4.5 MB</strong></td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pdf.png" alt="">Deadlocks.pdf</td>
+                        <td>Distributed Systems</td>
+                        <td> 02 Jan, 2025 </td>
+                        <td> <strong>5.2 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pdf.png" alt="">Compilers.pdf</td>
+                        <td>Compiler Design</td>
+                        <td> 14 Jan, 2025 </td>
+                        <td> <strong>2.0 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pptx.png" alt="">Find S.pptx</td>
+                        <td>Machine Learning</td>
+                        <td> 25 Jan, 2025 </td>
+                        <td> <strong>3.4 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\docx.png" alt="">Interrupst.docx</td>
+                        <td>Embedded Systems</td>
+                        <td> 12 Jan, 2025 </td>
+                        <td> <strong>2.7 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pdf.png" alt="">Xquery.pdf</td>
+                        <td>XML</td>
+                        <td> 01 Jan, 2025 </td>
+                        <td> <strong>1.2 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pptx.png" alt="">republic_day.pptx</td>
+                        <td>College Activity</td>
+                        <td> 25 Jan, 2025 </td>
+                        <td> <strong>5.9 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pdf.png" alt="">Synchronization.pdf</td>
+                        <td>Operating Systems</td>
+                        <td> 12 Jan, 2025 </td>
+                        <td> <strong>7.2 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets\img\pdf.png" alt="">Backtracking.pdf</td>
+                        <td>Algorithms</td>
+                        <td> 29 Dec, 2025 </td>
+                        <td> <strong>4.2 MB</strong> </td>
+                        <td class="actions">
+                            <i class="fa fa-edit edit" onclick="editRow(this)"></i>
+                            <i class="fa fa-eye view" onclick="viewRow(this)"></i>
+                            <i class="fa fa-trash delete" onclick="deleteRow(this)"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/my.js"></script>
+    </body>
+</html>

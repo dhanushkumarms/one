@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAARchive</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h2><span class="welcome">Welcome</span> <span class="back">Back!</span></h2>
+        <div class="login-box">
+            <div class="labelcont">
+                <label for="email-signup">Email</label>
+            </div>
+            <input type="email" placeholder="example@gmail.com" id="email-signup" />
+            <span class="error" id="email-signup-error"></span> <!-- Error message below input -->
+
+            <div class="labelcont">
+                <label for="password-signup">Password</label>
+            </div>
+            <div class="password-container">
+                <input type="password" class="input-field" id="password-signup" placeholder="Password" required />
+                <span class="toggle-password" onclick="togglePassword('password-signup')"></span>
+            </div>
+            <span class="error" id="password-signup-error"></span> <!-- Error message below input -->
+
+            <div class="labelcont">
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+            <div class="password-container">
+                <input type="password" class="input-field" id="confirm-password" placeholder="Confirm Password" required />
+            </div>
+            <span class="error" id="confirm-password-error"></span> <!-- Error message below input -->
+
+            <button onclick="signUp()">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </div>
+    </div>
+
+    <script src="assets\js\login.js"></script>
+</body>
+</html>
